@@ -1,0 +1,23 @@
+html {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    max-width: 500px;
+}
+
+img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#CV {
+    padding: 60px;
+    background-color: gray;
+}
