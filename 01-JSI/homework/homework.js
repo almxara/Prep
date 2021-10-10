@@ -1,22 +1,22 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta correcta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = null;
+const nuevaString = "Hola";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = null;
+const nuevoNum = 10;
 
 // Crea una variable booleana:
-const nuevoBool = null;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - null === 5;
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * null === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -28,94 +28,147 @@ const nuevoModulo = 21 % 5 === null;
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-
+  var resta = x - y;
+  return resta;
 }
+
+resta(5, 2);
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  var sonIguales = x === y;
+  return sonIguales;
 }
+
+sonIguales(2, 2);
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  var tienenMismaLongitud = str1.length === str2.length;
+  return tienenMismaLongitud;
 }
+
+tienenMismaLongitud("casa", "casa");
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (num < 90) {
+    return true;
+  } return false;
 
 }
+
+menosQueNoventa (10);
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
+  if ((num % 2) === 1) {
+    return true;
+  } return false;
 
 }
+
+esImpar (5);
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // Ojo: No es raiz cuadrada!
   // Tu código:
+  var elevarAlCuadrado = Math.pow(num,2);
+  return elevarAlCuadrado;
 
 }
+
+elevarAlCuadrado(2);
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
+  var elevar = Math.pow(num,exponent);
+  return elevar;
 
 }
+
+elevar(3,2);
 
 function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-
+  if (numero > 0) {
+    return "Es positivo";
+  } else if (numero < 0) {
+    return "Es negativo";
+  } return false;
 }
+
+esPositivo(11);
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
+  var combinarNombres = (nombre+" "+apellido);
+  return combinarNombres;
 
 }
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   // Tu código:
-
+  var retornarPerimetro = 4*lado;
+  return retornarPerimetro
 }
+
+retornarPerimetro (2);
 
 function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   // Tu código:
-  
+  var deEuroAdolar = euro*1.20;
+  return deEuroAdolar;
+
 }
 
+deEuroAdolar(1);
 
 function esVocal(letra){
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Tu código:
-
+  if (letra === "a" || "e" || "i" || "o" ||"u") {
+    return "Es vocal";
+  } else if ((letra.length) >= 2) {
+    return "Dato incorrecto";
+  } 
 }
+
+esVocal("aar");
 
 function obtenerMayor(x, y) {
   // "x" e "y" son números enteros.
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-
+  if (x > y) {
+    return x;
+  } else if (y === x) {
+    return x || y;
+  } return y
 }
+
+obtenerMayor (6,3)
 
 /*
 Para implementar la siguiente función vamos a utilizar una estructura de control de flujo nueva, 
