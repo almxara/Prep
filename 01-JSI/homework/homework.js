@@ -147,14 +147,12 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Tu código:
-  if (letra === "a" || "e" || "i" || "o" ||"u") {
-    return "Es vocal";
-  } else if ((letra.length) >= 2) {
+  if(letra.length > 1){
     return "Dato incorrecto";
+  } else if (letra == "a"||"e"||"i"||"o"||"u"){
+    return "Es vocal";
   } 
 }
-
-esVocal("aar");
 
 function obtenerMayor(x, y) {
   // "x" e "y" son números enteros.
@@ -190,15 +188,36 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   // Tu código:
-
+  switch (colors) {
+    case "blue":
+      return "This is blue";
+      break;
+    case "red":
+      return "This is red";
+      break;
+    case "green":
+      return "This is green";
+      break;
+    case "orange":
+      return "This is orange";
+      break;
+    default:
+      return "Color not found";
+  }
 }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-
-}
+    if (esDiezOCinco === 10 ) {
+      return true;
+    } else if (esDiezOCinco === 5 ) {
+      return true;
+    }else if (esDiezOCinco !== 10 || 5 ) {
+      return false;
+    } 
+  }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
