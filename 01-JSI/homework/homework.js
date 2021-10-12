@@ -206,11 +206,9 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-    if (esDiezOCinco === 10 ) {
+    if (numero === 10 || numero === 5 ) {
       return true;
-    } else if (esDiezOCinco === 5 ) {
-      return true;
-    }else if (esDiezOCinco !== 10 || 5 ) {
+    } else {
       return false;
     } 
   }
@@ -219,7 +217,11 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  if (numero > 20 && numero < 50) {
+    return true;
+  } else {
+    return false;
+  } 
 }
 
 function esPrimo(numero) {
@@ -229,7 +231,10 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   // Tu código:
-
+  if (numero === 0 || numero === 1) return false;
+  for (let i = 2; i < numero; i++) {
+    if (numero % i === 0) return false;
+  } return true;
 }
 
 function doWhile(numero) {
