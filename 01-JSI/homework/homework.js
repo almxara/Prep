@@ -243,8 +243,9 @@ function doWhile(numero) {
   //Pueden usar un while o un bucle do ... while (Investigarlo si quieren hacerlo de la segunda forma)
   // Tu código:
   do {
-    numero = numero * 5;
-  } while (numero * 8)
+    let numero = 5;
+    contar = numero + 1;
+  } while (numero < 8);
 }
 
 
